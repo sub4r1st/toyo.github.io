@@ -119,6 +119,10 @@ span.sim-dot {
     grid-template-columns: repeat(4, 1fr);
 }
 
+.black{
+   margin-top: 35%;
+}
+
 .news{
     z-index: 1;
     width: 380px;
