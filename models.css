@@ -1,0 +1,146 @@
+@import "footer.css";
+@import "header.css";
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Monument Extended", Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-width: 420px;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    position: absolute;
+    transform-style: preserve-3d;
+    height: 100vh;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 80%;
+    padding: 0;
+    top: 60px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.new_container{
+    top: 100px;
+}
+
+.model-class{
+    position: absolute;
+    margin: 0;
+    font-size: 30px;
+    opacity: 1;
+    color: black;
+}
+
+.container hr {
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: #0e0e0e;
+    opacity: 0.5;
+}
+
+.grid_container_models{
+    width: 100%;
+    display: grid;
+    grid-gap: 10px 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.models{
+    z-index: 1;
+    width: 330px;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+@media screen and (max-width: 1700px) {
+    .container{
+        width: 90%;
+    }
+
+    .models{
+        width: 270px;
+    }
+
+    .product_img{
+        width: 270px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .grid_container_models{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container{
+        width: 100%;
+    }
+
+    .grid_container_models{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .models{
+        width: 230px;
+    }
+
+    .product_img{
+        width: 230px;
+    }
+
+    .left_head{
+        margin-left: 0%;
+    }
+}
+
+.product {
+    width: 330px;
+    padding: 20px;
+    padding-bottom: 0;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+.product_img {
+    margin-top: 28px;
+    width: 200px;
+}
+
+.product__title {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-weight: 100;
+    font-size: 24px;
+    width: 80%;
+    color: black;
+}
+
+.product__props {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.product_price {
+    margin-right: 12px;
+    font-size: 18px;
+    opacity: 0.6;
+}

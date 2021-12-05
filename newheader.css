@@ -1,0 +1,185 @@
+header {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.welcome h1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 228%;
+    margin: 0;
+}
+
+header, header:before {
+    background: 50% 50% / cover;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white 50% 50% no-repeat;
+    background-size: cover;
+    min-width: 1000px;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+}
+
+nav{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    box-shadow: #0e0e0e;
+}
+
+nav ul li a {
+    color: #0e0e0e;
+    font-size: 12px;
+    text-decoration: none;
+    padding-top: 20px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+nav ul li a:hover{
+    color: #0e0e0e;
+    border-bottom: solid red 2px;
+}
+
+
+
+nav ul{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    max-width: 500px;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-left: 100px;
+
+}
+
+nav ul li{
+    width: 23%;
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+}
+
+nav .nav-wrapper{
+    width: 70%;
+    min-width: 700px;
+}
+
+.cool-link::after {
+    background: #fff;
+}
+
+.nav-btn i {
+    background: #fff;
+}
+
+input{
+    display: none;
+}
+
+#checkbox{
+    display: none;
+}
+
+#menuImage{
+    display: none;
+}
+
+.shortMenu{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 800px){
+    nav ul{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 550px){
+    nav{
+        flex-direction: column;
+    }
+
+    .nav-wrapper{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        height: 75%;
+    }
+
+    .nav-wrapper div{
+        width: 100%;
+    }
+
+    .logo{
+        margin-left: 0;
+    }
+    .nav-btn{
+        display: none;
+    }
+    nav ul{
+        margin-left: -50px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #menuImage{
+        display: block;
+    }
+    .menuImage{
+        margin-right: 17px;
+        margin-top: 4px;
+    }
+    .menuImage input[type=checkbox]:checked{
+        background-color: rgba(118, 118, 118, 0.4);
+        border-radius: 4px;
+    }
+    .menuImage input{
+        height:1px;
+        width:1px;
+        border:0;
+    }
+    .menuImage input[type=checkbox]:checked ~ .nav-wrapper{
+        display: flex;
+    }
+
+    .check{
+        height: 100px;
+    }
+
+    .cont{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .shortMenu{
+        justify-content: space-between;
+    }
+
+    #image:hover{
+        background-color: rgba(118, 118, 118, 0.18);
+        border-radius: 4px;
+    }
+}

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог</title>
+    <link rel="icon" href="logo-toyota2020.svg">
+    <link rel="stylesheet" href="catalog.css">
+</head>
+<body>
+<header>
+    <nav>
+        <div class="shortMenu">
+            <input type="checkbox" id="nav" class="hidden">
+            <label for="nav" class="nav-btn"> <i></i> <i></i> <i></i>
+            </label> <a class="logo" href="main.html"><img src="logo-toyota2020.svg" alt="" width="70px"></a>
+            <div class="menuImage">
+                <input class="checkbox" type="checkbox" id="checkbox">
+                <label class="checkbox" for="checkbox" id="menuImage">
+                    <img id="image" src="angularjs-icon-3.jpg" alt="" width="35px">
+                </label>
+            </div>
+        </div>
+        <script>
+            document.querySelector(".menuImage input[type=checkbox]").onchange = function (){
+                document.querySelector("nav").classList.toggle("check", this.checked);
+                document.querySelector(".nav-wrapper").classList.toggle("cont", this.checked);
+                document.querySelector(".container").classList.toggle("new_container", this.checked);
+            }
+        </script>
+        <div class="nav-wrapper">
+            <ul class="topmenu ">
+                <li><a href="catalog.html" class="cool-link">В НАЛИЧИИ</a></li>
+                <li><a href="models.html" class="cool-link">МОДЕЛЬНЫЙ РЯД</a></li>
+                <li><a href="gallery.html" class="cool-link">ГАЛЕРЕЯ</a></li>
+                <li><a href="history.html" class="cool-link">GAZOO RACING</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+
+<div class="container">
+    <div class="products-content grid-container">
+        <ul class="products-grid">
+            <li class="products-grid__item">
+                <article class="product">
+                    <a href="#" class="product__image">
+                        <div class="product__switch image-switch">
+                            <div class="image-switch__item">
+                                <div class="image-switch__img"><img src="carlineup/crown.png" alt="Макбук"></div>
+                            </div>
+
+                        </div>
+                        <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                    </a>
+                    <h3 class="product__title">
+                        <a href="#">Toyota Crown RS Advance</a>
+                    </h3>
+                    <div class="product__props">
+                        <span class="product__testimonials">2021<br></span>
+                    </div>
+                    <div class="product__info">
+							<span class="product__rating">
+								<img src="engine.svg" width="16" height="15">
+							</span>
+                        <span class="product__term">3.5 л., 299 л.с., Бензин</span>
+                    </div>
+                    <div class="product__info">
+							<span class="product__rating">
+								<img src="KPP.svg" width="16" height="15">
+							</span>
+                        <span class="product__term">Вариатор</span>
+                    </div>
+                    <div class="product__info">
+							<span class="product__rating">
+								<img src="privod.svg" width="16" height="15">
+							</span>
+                        <span class="product__available">Задний привод</span>
+                    </div>
+                    <div class="product__price product-price">
+                        <span class="product-price__current">2 899 000 ₽</span>
+                        <span class="product-price__old">3 099 999 ₽</span>
+                    </div>
+                    <button class="product__btn">Подробнее</button>
+                </article>
+            </li>
+            <li class="products-grid__item">
+                <article class="product">
+                    <a href="#" class="product__image">
+                        <div class="product__switch image-switch">
+                            <div class="image-switch__item">
+                                <div class="image-switch__img"><img src="carlineup/camry.png" alt="Макбук"></div>
+                            </div>
+
+                        </div>
+                        <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                    </a>
+                    <h3 class="product__title">
+                        <a href="#">Toyota Camry Классик</a>
+                    </h3>
+                    <div class="product__props">
+                        <span class="product__testimonials">2021<br></span>
+                    </div>
+                    <div class="product__info">
+							<span class="product__rating">
+								<img src="engine.svg" width="16" height="15">
+							</span>
+                        <span class="product__term">2.0 л., 150 л.с., Бензин</span>
+                    </div>
+                    <div class="product__info">
+							<span class="product__rating">
+								<img src="KPP.svg" width="16" height="15">
+							</span>
+                        <span class="product__term">Вариатор</span>
+                    </div>
+                    <div class="product__info">
+							<span class="product__rating">
+								<img src="privod.svg" width="16" height="15">
+							</span>
+                        <span class="product__available">Передний привод</span>
+                    </div>
+                    <div class="product__price product-price">
+                        <span class="product-price__current">2 015 000 ₽</span>
+                        <span class="product-price__old">2 199 999 ₽</span>
+                    </div>
+                    <button class="product__btn">Подробнее</button>
+                </article>
+            </li><li class="products-grid__item">
+            <article class="product">
+                <a href="#" class="product__image">
+                    <div class="product__switch image-switch">
+                        <div class="image-switch__item">
+                            <div class="image-switch__img"><img src="carlineup/camry.png" alt="Макбук"></div>
+                        </div>
+                    </div>
+                    <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                </a>
+                <h3 class="product__title">
+                    <a href="#">Toyota Camry Элеганс</a>
+                </h3>
+                <div class="product__props">
+                    <span class="product__testimonials">2021<br></span>
+                </div>
+                <div class="product__info">
+							<span class="product__rating">
+								<img src="engine.svg" width="16" height="15">
+							</span>
+                    <span class="product__term">2.5 л., 200 л.с., Бензин</span>
+                </div>
+                <div class="product__info">
+							<span class="product__rating">
+								<img src="KPP.svg" width="16" height="15">
+							</span>
+                    <span class="product__term">Вариатор</span>
+                </div>
+                <div class="product__info">
+							<span class="product__rating">
+								<img src="privod.svg" width="16" height="15">
+							</span>
+                    <span class="product__available">Передний привод</span>
+                </div>
+                <div class="product__price product-price">
+                    <span class="product-price__current">2 015 000 ₽</span>
+                    <span class="product-price__old">2 199 999 ₽</span>
+                </div>
+                <button class="product__btn">Подробнее</button>
+            </article>
+        </li><li class="products-grid__item">
+            <article class="product">
+                <a href="#" class="product__image">
+                    <div class="product__switch image-switch">
+                        <div class="image-switch__item">
+                            <div class="image-switch__img"><img src="carlineup/LC300.png" alt="Макбук"></div>
+                        </div>
+                    </div>
+                    <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                </a>
+                <h3 class="product__title">
+                    <a href="#">Toyota Land Cruiser 300</a>
+                </h3>
+                <div class="product__props">
+                    <span class="product__testimonials">2021<br></span>
+                </div>
+                <div class="product__info">
+							<span class="product__rating">
+								<img src="engine.svg" width="16" height="15">
+							</span>
+                    <span class="product__term">3.3 л., 299 л.с., Дизель</span>
+                </div>
+                <div class="product__info">
+							<span class="product__rating">
+								<img src="KPP.svg" width="16" height="15">
+							</span>
+                    <span class="product__term">АКПП</span>
+                </div>
+                <div class="product__info">
+							<span class="product__rating">
+								<img src="privod.svg" width="16" height="15">
+							</span>
+                    <span class="product__available">Полный привод</span>
+                </div>
+                <div class="product__price product-price">
+                    <span class="product-price__current">9 300 000 ₽</span>
+                    <span class="product-price__old">9 699 999 ₽</span>
+                </div>
+                <button class="product__btn">Подробнее</button>
+            </article>
+        </li><li class="products-grid__item">
+            <article class="product">
+                <a href="#" class="product__image">
+                    <div class="product__switch image-switch">
+                        <div class="image-switch__item">
+                            <div class="image-switch__img"><img src="carlineup/LC300.png" alt="Макбук"></div>
+                        </div>
+                    </div>
+                    <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                </a>
+                <h3 class="product__title">
+                    <a href="#">Toyota Land Cruiser 300</a>
+                </h3>
+                <div class="product__props">
+                    <span class="product__testimonials">2021<br></span>
+                </div>
+                <div class="product__info">
+							<span class="product__rating">
+								<img src="engine.svg" width="16" height="15">
+							</span>
+                    <span class="product__term">3.4 л., 415 л.с., Бензин</span>
+                </div>
+                <div class="product__info">
+							<span class="product__rating">
+								<img src="KPP.svg" width="16" height="15">
+							</span>
+                    <span class="product__term">АКПП</span>
+                </div>
+                <div class="product__info">
+							<span class="product__rating">
+								<img src="privod.svg" width="16" height="15">
+							</span>
+                    <span class="product__available">Полный привод</span>
+                </div>
+                <div class="product__price product-price">
+                    <span class="product-price__current">10 300 000 ₽</span>
+                    <span class="product-price__old">10 499 999 ₽</span>
+                </div>
+                <button class="product__btn">Подробнее</button>
+            </article>
+        </li><li class="products-grid__item">
+            <article class="product">
+                <a href="#" class="product__image">
+                    <div class="product__switch image-switch">
+                        <div class="image-switch__item">
+                            <div class="image-switch__img"><img src="carlineup/LC300GR.png" alt="Макбук"></div>
+                        </div>
+                    </div>
+                    <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                </a>
+                <h3 class="product__title">
+                    <a href="#">Toyota Land Cruiser 300 GR</a>
+                </h3>
+                <div class="product__props">
+                    <span class="product__testimonials">2021<br></span>
+                </div>
+                <div class="product__info">
+							<span class="product__rating">
+								<img src="engine.svg" width="16" height="15">
+							</span>
+                    <span class="product__term">1.5 л., 140 л.с., Бензин</span>
+                </div>
+                <div class="product__info">
+							<span class="product__rating">
+								<img src="KPP.svg" width="16" height="15">
+							</span>
+                    <span class="product__term">АКПП</span>
+                </div>
+                <div class="product__info">
+							<span class="product__rating">
+								<img src="privod.svg" width="16" height="15">
+							</span>
+                    <span class="product__available">Полный привод</span>
+                </div>
+                <div class="product__price product-price">
+                    <span class="product-price__current">12 300 000 ₽</span>
+                    <span class="product-price__old">12 699 999 ₽</span>
+                </div>
+                <button class="product__btn">Подробнее</button>
+            </article>
+        </li><li class="products-grid__item">
+            <article class="product">
+                <a href="#" class="product__image">
+                    <div class="product__switch image-switch">
+                        <div class="image-switch__item">
+                            <div class="image-switch__img"><img src="carlineup/supra.png" alt="Макбук"></div>
+                        </div>
+                    </div>
+                    <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                </a>
+                <h3 class="product__title">
+                    <a href="#">Toyota GR Supra</a>
+                </h3>
+                <div class="product__props">
+                    <span class="product__testimonials">2021<br></span>
+                </div>
+                <div class="product__info">
+							<span class="product__rating">
+								<img src="engine.svg" width="16" height="15">
+							</span>
+                    <span class="product__term">3.0 л., 382 л.с., Бензин</span>
+                </div>
+                <div class="product__info">
+							<span class="product__rating">
+								<img src="KPP.svg" width="16" height="15">
+							</span>
+                    <span class="product__term">АКПП</span>
+                </div>
+                <div class="product__info">
+							<span class="product__rating">
+								<img src="privod.svg" width="16" height="15">
+							</span>
+                    <span class="product__available">Задний привод</span>
+                </div>
+                <div class="product__price product-price">
+                    <span class="product-price__current">5 020 000 ₽</span>
+                    <span class="product-price__old">5 399 999 ₽</span>
+                </div>
+                <button class="product__btn">Подробнее</button>
+            </article>
+        </li><li class="products-grid__item">
+            <article class="product">
+                <a href="#" class="product__image">
+                    <div class="product__switch image-switch">
+                        <div class="image-switch__item">
+                            <div class="image-switch__img"><img src="carlineup/gryaris.png" alt="Макбук"></div>
+                        </div>
+                    </div>
+                    <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                </a>
+                <h3 class="product__title">
+                    <a href="#">Toyota GR Yaris</a>
+                </h3>
+                <div class="product__props">
+                    <span class="product__testimonials">2021<br></span>
+                </div>
+                <div class="product__info">
+							<span class="product__rating">
+								<img src="engine.svg" width="16" height="15">
+							</span>
+                    <span class="product__term">1.6 л., 272 л.с., Бензин</span>
+                </div>
+                <div class="product__info">
+							<span class="product__rating">
+								<img src="KPP.svg" width="16" height="15">
+							</span>
+                    <span class="product__term">МКПП</span>
+                </div>
+                <div class="product__info">
+							<span class="product__rating">
+								<img src="privod.svg" width="16" height="15">
+							</span>
+                    <span class="product__available">Полный привод</span>
+                </div>
+                <div class="product__price product-price">
+                    <span class="product-price__current">4 300 000 ₽</span>
+                    <span class="product-price__old">4 399 999 ₽</span>
+                </div>
+                <button class="product__btn">Подробнее</button>
+            </article>
+        </li>
+            <li class="products-grid__item">
+            <article class="product">
+                <a href="#" class="product__image">
+                    <div class="product__switch image-switch">
+                        <div class="image-switch__item">
+                            <div class="image-switch__img"><img src="carlineup/GR86.png" alt="Макбук"></div>
+                        </div>
+                    </div>
+                    <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                </a>
+                <h3 class="product__title">
+                    <a href="#">Toyota GR86</a>
+                </h3>
+                <div class="product__props">
+                    <span class="product__testimonials">2021<br></span>
+                </div>
+                <div class="product__info">
+							<span class="product__rating">
+								<img src="engine.svg" width="16" height="15">
+							</span>
+                    <span class="product__term">2.4 л., 235 л.с., Бензин</span>
+                </div>
+                <div class="product__info">
+							<span class="product__rating">
+								<img src="KPP.svg" width="16" height="15">
+							</span>
+                    <span class="product__term">МКПП</span>
+                </div>
+                <div class="product__info">
+							<span class="product__rating">
+								<img src="privod.svg" width="16" height="15">
+							</span>
+                    <span class="product__available">Задний привод</span>
+                </div>
+                <div class="product__price product-price">
+                    <span class="product-price__current">4 300 000 ₽</span>
+                    <span class="product-price__old">4 399 999 ₽</span>
+                </div>
+                <button class="product__btn">Подробнее</button>
+            </article>
+        </li>
+        </ul>
+    </div>
+    <div class="height"><br></div>
+    <div class="black_container">
+        <footer>
+            <div class="container_1">
+                <div class="grid_container_footer">
+                    <div><h3>Новые автомобили</h3>
+                        <ul>
+                            <li>Специальные предложения</li>
+                            <li>Toyota Camry</li>
+                            <li>Toyota Camry GR</li>
+                            <li>Toyota Land Cruiser 300</li>
+                            <li>Toyota GR86</li>
+                        </ul>
+                    </div>
+                    <div><h3>Микроавтобусы</h3>
+                        <ul>
+                            <li>Toyota Hiace</li>
+                            <li>Toyota Alphard</li>
+                        </ul>
+                    </div>
+                    <div><h3>C пробегом</h3>
+                        <ul>
+                            <li>Toyota с пробегом</li>
+                            <li>Scion c пробегом</li>
+                            <li>Другие марки</li>
+                        </ul>
+                    </div>
+                    <div><h3>Сервис и аксессуары</h3>
+                        <ul>
+                            <li>Спецпредложения</li>
+                            <li>Запись на сервис</li>
+                            <li>Статус ремонта</li>
+                            <li>Калькулятор сервиса</li>
+                            <li>Запасные части</li>
+                            <li>Кузовной ремонт</li>
+                            <li>Аксессуары</li>
+                            <li>Online-каталог аксессуаров</li>
+                            <li>Сервисные Сертификаты</li>
+                        </ul>
+                    </div>
+                    <div><h3>Финансовые услуги</h3>
+                        <ul>
+                            <li>Кредитование</li>
+                            <li>Страхование</li>
+                            <li>Лизинг</li>
+                        </ul>
+                    </div>
+                    <div><h3>О компании</h3>
+                        <ul>
+                            <li>Компания сегодня</li>
+                            <li>Специальные предложения</li>
+                            <li>Журнал Toyota</li>
+                            <li>Лекторий Toyota</li>
+                            <li>Клуб Toyota</li>
+                            <li>S-Lounge</li>
+                            <li>Контакты</li>
+                            <li>Ваши менеджеры</li>
+                            <li>Вакансии</li>
+                            <li>Ресторан</li>
+                            <li>Подписка на новости</li>
+                            <li>Toyota в Whatsapp</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <ul>
+                        <li><a href=""><img src="vk.png"></a></li>
+                        <li><a href=""><img src="tg.jpeg"></a></li>
+                        <li><a href=""><img src="fb.png"></a></li>
+                    </ul>
+                </div>
+                <p class="prava">© 2015–2021. Toyota. Все права защищены. Данный сайт носит информационно-справочный
+                    характер и ни при каких условиях не является публичной офертой.</p></div>
+        </footer>
+    </div>
+</div>
+</body>
+</html>

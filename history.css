@@ -1,0 +1,247 @@
+@import 'header.css';
+@import 'footer2.css';
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Monument Extended", Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-width: 420px;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    position: absolute;
+    transform-style: preserve-3d;
+    height: 100vh;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.head{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    height: 100%;
+    background-size: 100%;
+    background-image: url("TOYOTA_Gazoo_Racing.gif");
+    background-repeat: no-repeat;
+}
+
+.head_container{
+    width: 100%;
+    height: 100%;
+    margin-left: 10%;
+    padding-top: 10%;
+}
+
+.head_container h1{
+    text-align: left;
+    margin-top: 0;
+    font-size: 50px;
+    width: 100%;
+}
+
+.head_container h2{
+    text-align: left;
+    margin-top: 0;
+    font-size: 40px;
+    width: 100%;
+}
+
+.grid_head{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 55%;
+    display: grid;
+    position: relative;
+    grid-gap: var(--gutter);
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.grid_head div{
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.grid_head div img{
+    width: 100%;
+}
+
+.grid_head div p{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.image1{
+    display: none;
+}
+
+#block1,#block3{
+    margin-left: 100px;
+    max-width: 800px;
+}
+
+#block2{
+    display: block;
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-image: url("gazoo_racing/background_image1.jpg");
+}
+
+#block2 div{
+    max-width: 400px;
+    margin-top: 20px;
+    margin-right: 20px;
+    float: right;
+    color: white;
+}
+
+#block4{
+    font-family: "Corbel Light";
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: url("gazoo_racing/background_image3.jpg");
+    padding-top: 20px;
+    padding-left: 70px;
+    padding-bottom: 20px;
+    padding-right: 70px;
+}
+
+#block4 h2{
+    font-size: 40px;
+    line-height: 37px;
+}
+
+.block4_grid_container{
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 300px;
+    grid-auto-rows: 230px;
+    grid-column-gap: 30px;
+    grid-row-gap: 50px;
+}
+
+.block4_grid_container div{
+    max-width: 400px;
+}
+
+.block4_grid_container div img{
+    width: 200px;
+    position: relative;
+    top: -70px;
+    left: -40px;
+}
+
+.block4_grid_container div h2{
+    line-height: 37px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+    font-stretch: normal;
+}
+
+.wrc{
+    background-image: url("gazoo_racing/wrc_background.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.wec{
+    background-image: url("gazoo_racing/wfo_background.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.dakar{
+    background-image: url("gazoo_racing/dakar_background.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.container{
+    width:100%;
+    display: block;
+    margin:0 auto;
+    color: black;
+    padding-right: 40px;
+}
+
+.container h1{
+    text-align: center;
+    font-size: 38px;
+}
+
+.container img{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.text{
+    line-height: 25px;
+}
+
+p{
+    padding-bottom: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .head{
+        padding-bottom: 30px;
+        background-color: #ffffff;
+    }
+
+    .head_container h1{
+        font-size: 40px;
+    }
+
+    .grid_head{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .image1{
+        display: block;
+    }
+
+    #block2{
+        margin-left: 80px;
+        max-width: 80%;
+        width: 80%;
+        background: none;
+    }
+
+    #block2 div{
+        width: 100%;
+        color: black;
+        float: none;
+    }
+
+    .block4_grid_container{
+        grid-template-columns: 1fr;
+    }
+
+    .container h1{
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .container{
+        width:100%;
+        margin:0 auto;
+        line-height: 25px;
+        padding-right: 40px;
+    }
+}
