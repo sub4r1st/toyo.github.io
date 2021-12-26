@@ -252,7 +252,7 @@ p{
 
 @media screen and (max-width: 480px){
     .container{
-        margin-top: -800px;
+        margin-top: -700px;
         padding-left: -55px;
         padding-right: 15px;
     }
