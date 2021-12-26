@@ -252,9 +252,12 @@ p{
 
 @media screen and (max-width: 480px){
     .container{
-        margin-top: -700px;
+        margin-top: -620px;
         padding-left: -55px;
         padding-right: 15px;
+    }
+    .head_container{
+        margin-left: 30px;
     }
     #block3{
         margin-top: -200px;
