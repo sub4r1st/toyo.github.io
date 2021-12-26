@@ -110,13 +110,13 @@ input{
     justify-content: space-between;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 850px){
     nav ul{
         margin-left: 0;
     }
 }
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 650px){
     nav{
         flex-direction: column;
     }

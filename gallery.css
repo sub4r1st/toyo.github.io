@@ -1,4 +1,4 @@
-@import "footer.css";
+@import "footer2.css";
 @import "header.css";
 
 html {
@@ -82,45 +82,4 @@ img:hover{
     .gallery_container{
         column-count: 1;
     }
-}
-
-body {
-    margin:0;
-}
-
-.popup {
-    position: absolute;
-    height:100%;
-    width:100%;
-    top:0;
-    left:0;
-    display:none;
-    text-align:center;
-}
-
-.popup_bg {
-    background:rgba(0,0,0,0.3);
-    position:fixed;
-    z-index:1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: auto;
-    height: auto;
-}
-
-
-.popup_img {
-    position: fixed;
-    z-index:2;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    max-height: 80%;
-    max-width: 68%;
-}
-
-.popup_img {
-    pointer-events: none;
 }
