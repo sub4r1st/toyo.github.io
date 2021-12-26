@@ -37,7 +37,14 @@ footer{
 	}
 }
 
-.footer_container h3{
+@media screen and (max-width: 480px) {
+	.grid_container_links{
+		grid-template-columns: 1fr;
+		grid-row-gap: 20px;
+	}
+}
+
+	.footer_container h3{
   color: white;
 }
 
