@@ -5,6 +5,7 @@ html {
     margin: 0;
     padding: 0;
     width: 100%;
+    max-width: 1280px;
     height: 100%;
     overflow: hidden;
     font-family: "Monument Extended", Arial, Helvetica, sans-serif;

@@ -148,7 +148,7 @@ span.sim-dot {
     margin-top: 0;
     margin-bottom: 33px;
 }
-.bmw_history_grid{
+.history_grid{
     padding-top: 30px;
     padding-bottom: 30px;
     width: 100%;
@@ -159,17 +159,17 @@ span.sim-dot {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.bmw_history_grid div{
+.history_grid div{
     width: 100%;
     margin: 0 auto;
 }
 
-.bmw_history_grid img{
+.history_grid img{
     width: 100%;
     float: left;
 }
 
-.bmw_history_grid div button {
+.history_grid div button {
     border: solid 2px #ffffff;
     padding: 14px 0;
     border-radius: 4px;
@@ -181,7 +181,7 @@ span.sim-dot {
     margin-top: 5px;
 }
 
-.bmw_history_grid div button:hover {
+.history_grid div button:hover {
     border-bottom: solid 2px #ff0000;
     transition: border 0.3s ease-in-out;
 }
@@ -201,12 +201,12 @@ span.sim-dot {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .bmw_history_grid{
+    .history_grid{
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 15px;
     }
 
-    .bmw_history_grid div button {
+    .history_grid div button {
         margin-bottom: 0px;
     }
 }
@@ -216,11 +216,11 @@ span.sim-dot {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .bmw_history_grid{
+    .history_grid{
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .bmw_history_grid div button {
+    .history_grid div button {
         margin-bottom: 0px;
     }
 }

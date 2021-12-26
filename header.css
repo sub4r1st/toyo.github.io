@@ -140,7 +140,7 @@ input{
         display: none;
     }
     nav ul{
-        margin-left: -50px;
+        margin-left: 20%;
         width: 100%;
         height: 45px;
         justify-content: space-between;
